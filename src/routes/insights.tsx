@@ -1,0 +1,5 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { InsightsContent, ImpactBand } from '@/components/agrinova/platform-parts';
+import { pageMeta } from '@/lib/page-meta';
+export const Route = createFileRoute('/insights')({ head: () => pageMeta('Farmer & Consumer Insights', 'Understand practical crop management actions and how early crop stress insights can support food quality, availability, and resource stewardship.'), component: Insights });
+function Insights() { return <main><div className="site-width page-heading"><div className="eyebrow">CONNECTED BY A HEALTHIER HARVEST</div><h1>From the field to the table.</h1><p className="body-copy">The same crop signal can tell two important stories. One helps a farmer decide what to do next. The other helps everyone understand why healthy fields matter.</p></div><section className="section pt-4"><div className="site-width"><InsightsContent/><p className="demo-notice">AgriNova’s sample insights illustrate potential benefits, not measured results or agronomic diagnoses. Always confirm conditions with field observations and qualified advice.</p></div></section><ImpactBand/></main>; }

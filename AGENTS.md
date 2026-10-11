@@ -1,0 +1,5 @@
+- Keep shared AgriNova navigation and footer in the root layout, with marketing content in individual leaf routes; this preserves navigation and shareable page metadata.
+- Keep the analysis demonstration browser-only with fixed sample outputs and local object URLs; this avoids uploading user imagery or implying real diagnostics.
+- Centralize visual tokens and reusable website styles in src/styles.css; this keeps the brand consistent across pages.
+- Pre-optimize shared UI dependencies in Vite alongside the template's React entries; this prevents late dependency discovery from mixing React module generations in an open preview.
+- Keep regional crop guidance separate from simulated image diagnostics, with source-linked water ranges and explicit units; this prevents general planning references from being mistaken for measured field prescriptions.
